@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PairViewController.swift
 //  Shark
 //
 //  Created by Kinshuk Juneja on 8/31/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PairViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
