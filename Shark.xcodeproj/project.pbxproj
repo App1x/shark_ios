@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85343FA41D7E4FA0009DECD6 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85343FA31D7E4FA0009DECD6 /* BLEManager.swift */; };
+		85343FA61D7E5157009DECD6 /* BLEHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85343FA51D7E5157009DECD6 /* BLEHandler.swift */; };
+		854809CE1D7786AF00D45793 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854809CD1D7786AF00D45793 /* Users.swift */; };
 		85CB7E581D7774C000F18982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB7E571D7774C000F18982 /* AppDelegate.swift */; };
 		85CB7E5A1D7774C000F18982 /* PairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB7E591D7774C000F18982 /* PairViewController.swift */; };
 		85CB7E5D1D7774C000F18982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CB7E5B1D7774C000F18982 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85343FA31D7E4FA0009DECD6 /* BLEManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		85343FA51D7E5157009DECD6 /* BLEHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEHandler.swift; sourceTree = "<group>"; };
+		854809CD1D7786AF00D45793 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		85CB7E541D7774C000F18982 /* Shark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CB7E571D7774C000F18982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85CB7E591D7774C000F18982 /* PairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairViewController.swift; sourceTree = "<group>"; };
@@ -100,9 +106,12 @@
 				85CB7E571D7774C000F18982 /* AppDelegate.swift */,
 				85CB7E591D7774C000F18982 /* PairViewController.swift */,
 				85CB7E5B1D7774C000F18982 /* Main.storyboard */,
+				854809CD1D7786AF00D45793 /* Users.swift */,
 				85CB7E5E1D7774C000F18982 /* Assets.xcassets */,
 				85CB7E601D7774C000F18982 /* LaunchScreen.storyboard */,
 				85CB7E631D7774C000F18982 /* Info.plist */,
+				85343FA31D7E4FA0009DECD6 /* BLEManager.swift */,
+				85343FA51D7E5157009DECD6 /* BLEHandler.swift */,
 			);
 			path = Shark;
 			sourceTree = "<group>";
@@ -193,13 +202,17 @@
 				TargetAttributes = {
 					85CB7E531D7774C000F18982 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5ZD762S758;
+						LastSwiftMigration = 0800;
 					};
 					85CB7E671D7774C000F18982 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 85CB7E531D7774C000F18982;
 					};
 					85CB7E721D7774C000F18982 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 85CB7E531D7774C000F18982;
 					};
 				};
@@ -257,6 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				85CB7E5A1D7774C000F18982 /* PairViewController.swift in Sources */,
+				85343FA41D7E4FA0009DECD6 /* BLEManager.swift in Sources */,
+				85343FA61D7E5157009DECD6 /* BLEHandler.swift in Sources */,
+				854809CE1D7786AF00D45793 /* Users.swift in Sources */,
 				85CB7E581D7774C000F18982 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +415,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Shark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.App1x.Shark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -410,10 +430,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Shark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.App1x.Shark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,6 +449,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.App1x.SharkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shark.app/Shark";
 			};
 			name = Debug;
@@ -437,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.App1x.SharkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shark.app/Shark";
 			};
 			name = Release;
@@ -448,6 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.App1x.SharkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Shark;
 			};
 			name = Debug;
@@ -459,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.App1x.SharkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Shark;
 			};
 			name = Release;
@@ -482,6 +510,7 @@
 				85CB7E7E1D7774C000F18982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85CB7E7F1D7774C000F18982 /* Build configuration list for PBXNativeTarget "SharkTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +519,7 @@
 				85CB7E811D7774C000F18982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85CB7E821D7774C000F18982 /* Build configuration list for PBXNativeTarget "SharkUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +528,7 @@
 				85CB7E841D7774C000F18982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
